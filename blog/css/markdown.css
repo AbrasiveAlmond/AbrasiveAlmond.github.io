@@ -1,0 +1,9 @@
+p {
+    background-color: rgb(94, 94, 94);
+    line-height: 1.5em;
+    word-break: keep-all;
+}
+
+h1 {
+    font-size: 1.5em;
+}

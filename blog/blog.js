@@ -1,5 +1,5 @@
 function loadHTML(page) {
-    fetch(`html/${page}.html`)
+    fetch(`blog/html/${page}.html`)
         .then(response => response.text())
         .then(text => document.getElementById('markdown').innerHTML = text);
 }
