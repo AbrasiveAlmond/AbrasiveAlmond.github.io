@@ -1,3 +1,0 @@
-- [ ] Sidebar links are url + "#note.md"
-- [ ] js onhashupdate to switch html import
-- [x] make some extra md files
