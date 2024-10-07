@@ -5,8 +5,6 @@
 - [ ] Remove useless clutter in modular manner.
 - [x] Basically a combo of gale and gnome theme
 
-
-https://github.com/AbrasiveAlmond
 ### Website behaviour & Todo:
  - [x] Properly test prototype idea
  - [ ] Use onhashchange to swap what blog is shown
