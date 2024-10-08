@@ -11,7 +11,9 @@
  - [ ] RSS support using comrak export to xml feature
 
 # Sidebar
- - [ ] Fill out with blank urls
+ - [x] Fill out with blank urls
+ - [ ] Make items collapsible
+ - [ ] Fix text wrapping
 
 ## Linking
 local pages will edit the website urlhash, while external pages will be normal links

@@ -13,7 +13,7 @@ body {
 
     display: grid;
     grid-template-rows: max(100px,10%) auto max(20px, 3%);
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: max(25%, 150px) 4fr;
 
     grid-template-areas: 
         'head head'
@@ -28,22 +28,85 @@ body {
     background-image: url(./images/header-bg.jpg);
     background-size: cover;
     background-position: center;
-    border-bottom: 0.2em;
 }
 
 .sidebar {
     grid-area: side;
-    background-color: darkcyan;
+    background-color: rgb(80, 80, 80);
+}
+
+.sidebar ol {
+
+    /* height: 400px; */
+    list-style: none;
+    
+    background-color: rgba(0,0,0,0.1);
+
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sidebar ol li {
+    /* Vertically center text */
+    height: 40px;
+    line-height: 40px;
+
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+
+    background-color: rgba(0,0,0,0.1);
+}
+
+li a {
+    /* make the entire button clickable */
+    display: block;
+
+    /* style text */
+    text-decoration: none;
+    padding-left: 20%;
+    font-size: 1em;
+    color: white;
+
+    /* Prevent line wrapping and style cutoff*/
+    overflow: hidden;
+    white-space: nowrap; 
+    mask: linear-gradient(-90deg,transparent,#000 20px,#000);
+}
+
+/* https://unused-css.com/blog/css-shake-animation/ */
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(2px, 2px) rotate(2deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-2px, 2px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+li:hover {
+    animation-name: tilt-n-move-shaking;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+}
+
+a:visited { 
+    color: inherit;
+}
+a:hover {
+    color:beige;
+}
+
+ul {
+   padding: 0px; 
 }
 
 .footer {
     grid-area: foot;
-    background-color: darkgoldenrod;
+    background-color: rgb(60, 60, 60);
 }
 
 .body {
     grid-area: body;
-    background-color: rgb(61, 61, 61);
-    color:white;
-    padding: 1.5em;
+    background-color: rgb(48, 48, 48);
 }

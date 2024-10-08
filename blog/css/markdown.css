@@ -1,9 +1,28 @@
-p {
-    background-color: rgb(94, 94, 94);
+#markdown p {
     line-height: 1.5em;
     word-break: keep-all;
+
 }
 
-h1 {
-    font-size: 1.5em;
+#markdown h1 {
+    font-size: 2em;
+    font-style: bold;
+    
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 100%;
+
+
+    letter-spacing: 0.05rem;
+
+}
+
+.body {
+    grid-area: body;
+    color:white;
+    padding: 1.5em;
+    overflow: scroll;
 }

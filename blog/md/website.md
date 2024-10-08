@@ -1,0 +1,2 @@
+Almost use just-the-docs because gnome websites uses it, but it was hella overkill for this job. So simplicity is the goal here.
+rationale for building it like this is because I like inventing my own solutions to whatever problems I face, instead of using prebuild ones. This is probably why I've never properly learned anything in compsci.
