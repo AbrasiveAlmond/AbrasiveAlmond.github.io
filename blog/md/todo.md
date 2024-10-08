@@ -1,16 +1,11 @@
 # Don't read this too closely it's just filler text
 
-## Main Goals
-- [x] Popups match gnome styling
-- [ ] Remove useless clutter in modular manner.
-- [x] Basically a combo of gale and gnome theme
-
 ### Website behaviour & Todo:
  - [x] Properly test prototype idea
  - [x] Use onhashchange to swap what blog is shown
  - [ ] RSS support using comrak export to xml feature
 
-# Sidebar
+## Sidebar
  - [x] Fill out with blank urls
  - [ ] Make items collapsible
  - [ ] Fix text wrapping
