@@ -21,7 +21,7 @@ body {
         'side foot';
 }
 
-.header {
+#header {
     grid-area: head;
     text-align: center;
     background-color: darkolivegreen;
@@ -30,12 +30,12 @@ body {
     background-position: center;
 }
 
-.sidebar {
+#sidebar {
     grid-area: side;
     background-color: rgb(80, 80, 80);
 }
 
-.sidebar ol {
+#sidebar ol {
 
     /* height: 400px; */
     list-style: none;
@@ -47,7 +47,7 @@ body {
     border-radius: 5px;
 }
 
-.sidebar ol li {
+#sidebar ol li {
     /* Vertically center text */
     height: 40px;
     line-height: 40px;
@@ -101,12 +101,12 @@ ul {
    padding: 0px; 
 }
 
-.footer {
+#footer {
     grid-area: foot;
     background-color: rgb(60, 60, 60);
 }
 
-.body {
+#body {
     grid-area: body;
     background-color: rgb(48, 48, 48);
 }

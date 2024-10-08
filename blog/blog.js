@@ -1,7 +1,8 @@
 function loadHTML(page) {
     fetch(`${page}.html`)
         .then(response => response.text())
-        .then(text => document.getElementById('markdown').innerHTML = text);
+        .then(text => document.getElementById('body').innerHTML = 
+        `<section id="markdown">${text}</section>`);
 }
 
 loadHTML("/home")
