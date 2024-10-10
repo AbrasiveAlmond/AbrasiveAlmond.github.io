@@ -1,0 +1,63 @@
+<h1>Don't read this too closely it's just filler text</h1>
+<h3>Website behaviour &amp; Todo:</h3>
+<ul>
+<li><input type="checkbox" checked="" disabled="" /> Properly test prototype idea</li>
+<li><input type="checkbox" checked="" disabled="" /> Use onhashchange to swap what blog is shown</li>
+<li><input type="checkbox" disabled="" /> RSS support using comrak export to xml feature</li>
+</ul>
+<h2>Sidebar</h2>
+<ul>
+<li><input type="checkbox" checked="" disabled="" /> Fill out with blank urls</li>
+<li><input type="checkbox" disabled="" /> Make items collapsible</li>
+<li><input type="checkbox" disabled="" /> :hover{ show (name + desc) } using <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"><!-- raw HTML omitted --> <!-- raw HTML omitted --> <!-- raw HTML omitted --></a></li>
+<li><input type="checkbox" checked="" disabled="" /> Fix text wrapping</li>
+</ul>
+<h3>Checklist to get working sidebar items</h3>
+<ul>
+<li><input type="checkbox" checked="" disabled="" /> Sidebar links are url + &quot;#note.md&quot;</li>
+<li><input type="checkbox" checked="" disabled="" /> js onhashupdate to switch html import</li>
+<li><input type="checkbox" checked="" disabled="" /> make some extra md files</li>
+</ul>
+<h2>Linking</h2>
+<p>local pages will edit the website urlhash, while external pages will be normal links
+More info in website.md
+urlhases being #'s at the end of a url to change content on the website. Usually used for jumping to headings so it is non-standard behaviour, and requires js.</p>
+<h2>Folder structure</h2>
+<ul>
+<li><input type="checkbox" checked="" disabled="" /> update all directory references in code
+HTML is used for the actual pages on the website, which can be random projects or markdown conversions.
+MD is purely just for where I need to embed some text
+Mirrored directories where md is compiled to html, and custom html can be manually added.
+.
+├── html
+│   ├── blogs
+│   │   └── first.html
+│   ├── Misc
+│   │   └── todo.html
+│   └── Photography
+│       └── Christchurch
+└── md
+├── blogs
+│   └── first.md
+└── Misc
+└── todo.md</li>
+</ul>
+<p>Combined directories, where each md-html document pair are siblings.
+A script to auto update html pages is probably easy to make
+.
+└── pages
+   ├── blogs
+   │   └── todo.html
+│   └── todo.md
+   │   └── self-hosting.html
+│   └── self-hosting.md
+   │   └── nixos.html
+│   └── nixos.md
+   ├── Misc
+   │   └── conways-gol.html
+   │   └── desmos.html
+   └── Photography
+       └── Christchurch</p>
+<h2>Markdown compiling</h2>
+<p>Would be nice to make a rust script to do this by crawling directories and converting md.
+not sure what the capabilities of github pages are for automating in terms of custom scripts.</p>

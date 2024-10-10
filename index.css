@@ -23,11 +23,16 @@ body {
 
 #header {
     grid-area: head;
-    text-align: center;
-    background-color: darkolivegreen;
-    background-image: url(./images/header-bg.jpg);
-    background-size: cover;
-    background-position: center;
+}
+
+#footer {
+    grid-area: foot;
+    background-color: rgb(60, 60, 60);
+}
+
+#body {
+    grid-area: body;
+    background-color: rgb(48, 48, 48);
 }
 
 #sidebar {
@@ -35,7 +40,15 @@ body {
     background-color: rgb(80, 80, 80);
 }
 
-#sidebar ol {
+.header {
+    text-align: center;
+    background-color: darkolivegreen;
+    background-image: url(./images/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar ol {
 
     /* height: 400px; */
     list-style: none;
@@ -47,7 +60,7 @@ body {
     border-radius: 5px;
 }
 
-#sidebar ol li {
+.sidebar ol li {
     /* Vertically center text */
     height: 40px;
     line-height: 40px;
@@ -99,14 +112,4 @@ a:hover {
 
 ul {
    padding: 0px; 
-}
-
-#footer {
-    grid-area: foot;
-    background-color: rgb(60, 60, 60);
-}
-
-#body {
-    grid-area: body;
-    background-color: rgb(48, 48, 48);
 }
