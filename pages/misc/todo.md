@@ -25,6 +25,7 @@
 - [x] make some extra md files
 
 ## Linking
+- [ ] Jesus christ fix the javascript. It is horrid
 local pages will edit the website urlhash, while external pages will be normal links
 More info in website.md
 urlhases being #'s at the end of a url to change content on the website. Usually used for jumping to headings so it is non-standard behaviour, and requires js.
