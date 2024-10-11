@@ -1,12 +1,17 @@
 # Don't read this too closely it's just filler text
 
-### Website behaviour & Todo:
+## Website behaviour & Todo:
  - [x] Properly test prototype idea
  - [x] Use onhashchange to swap what blog is shown
  - [ ] RSS support using comrak export to xml feature
- - [ ] implement test page like photography home.html, desmos widget, or conways GOL
+ - [x] implement test page like photography home.html, desmos widget, or conways GOL
+ - [x] test links
+[conway-gol page todo list](#coding/conway-gol/conway-gol)
 
-
+### Text formatting
+ - [x] preserve line breaks from markdown
+ - [ ] fix links
+ - [ ] create overall theme / style that doesn't look like raw markdown
 
 ## Sidebar
  - [x] Fill out with blank urls
@@ -26,6 +31,7 @@ urlhases being #'s at the end of a url to change content on the website. Usually
 
 ## Folder structure
  - [x] update all directory references in code
+
 HTML is used for the actual pages on the website, which can be random projects or markdown conversions.
 MD is purely just for where I need to embed some text
 Mirrored directories where md is compiled to html, and custom html can be manually added.

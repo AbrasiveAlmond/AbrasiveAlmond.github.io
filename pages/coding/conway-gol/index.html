@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+  <script type="text/javascript">
+    window.onload = function(){
+      playbutton = document.getElementById("playbutton");
+    }
+  </script>
+</head>
+
+<body>
+<main>
+    <div class="game">
+      <canvas id="canvas" width="800" height="800"></canvas>
+    </div>
+  <section class="controls">
+    <ul>
+      <li><button id="playbutton" class="button toggled" role="button" onclick="playpause = playpause * -1 + 1">Play / Pause</button></li>
+      <li><button class="button" role="button" onclick="grid = createGrid(gridW, gridH)">Clear Grid</button></li>
+      <li><button class="button" role="button" onclick="updateGrid()">Iterate Once</button></li>
+    </ul>
+    <ul>
+      <li>= Spacebar</li>
+      <li>= ctrl + c</li>
+      <li>= i</li>
+    </ul>
+    <ul>
+      <li><button class="button" role="button" onclick="toggleStamp(gliderStamp)">Glider Stamp</button></li>
+      <li><button class="button" role="button" onclick="toggleStamp(gliderGunStamp)">Glider Gun</button></li>
+      <li><button class="button" role="button" onclick="rotateStamp()">Rotate Stamp</button></li>
+    </ul>
+    <ul>
+      <li>= g</li>
+      <li>= h</li>
+      <li>= r</li>
+    </ul>
+    <ul>
+      <li><button class="button" role="button" onclick="saveState = Array.from(gridView)">Save State</button></li>
+      <li><button class="button" role="button" onclick="gridView = Array.from(saveState)">Restore State</button></li>
+    </ul>
+    <ul>
+      <li> = s</li>
+      <li>= d</li>
+    </ul>
+  </section>
+</main>
+<script src="sketch.js"></script> <!-- run after dom is built -->
+</body>
+
+</html>
